@@ -1,7 +1,8 @@
 services:
   web:
     container_name: ${ODOO_CONTAINER_NAME}
-    image: odoodev:${ODOO_VERSION}
+    image: odoo:${ODOO_VERSION}
+    build: .
     depends_on:
       - db
     ports:
