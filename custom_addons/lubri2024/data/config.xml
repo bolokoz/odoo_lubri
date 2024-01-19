@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <!-- Set default currency -->
+        <record id="base.main_company" model="res.company">
+            <field name="currency_id" ref="base.PYG"/>
+        </record>
+
+        <!-- Set default currency position (optional) -->
+        <!-- <record id="base.main_company_currency_position" model="ir.values">
+            <field name="name">main_company_id</field>
+            <field name="key2">web.default_currency</field>
+            <field name="value">after</field>
+        </record> -->
+    </data>
+</odoo>
